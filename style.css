@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bg-color: #fdfdfd;
+  --text-color: #333;
+  --main-color: #754ef9;
+  --white-color: #fdfdfd;
+  --shadow-color: rgba(0, 0, 0, 0.4);
+  --bg2-color: #39acff;
+}
+
+*::selection {
+  background: var(--main-color);
+  color: var(--bg-color);
+}
+
+.dark-mode {
+  --bg-color: #0b061f;
+  --text-color: #948787;
+  --shadow-color: rgba(0, 0, 0, 0.7);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 3rem;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  transition: 0.5s;
+  background-color: var(--bg2-color);
+}
+
+.header.sticky {
+  background: var(--bg-color);
+  box-shadow: 0 0.1rem 1rem var(--shadow-color);
+}
+
+.logo {
+  font-size: 7rem;
+  color: var(--white-color);
+  font-weight: 500;
+  margin-right: auto;
+  margin-left: 20rem;
+  font-family: "Times New Roman", Times, serif;
+}
+.navbar {
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+.navbar a {
+  position: relative;
+  font-size: 2rem;
+  color: var(--text-color);
+  font-weight: 500;
+  margin-right: 3rem;
+}
+
+.navbar a:hover {
+  color: var(--white-color);
+  transition: all 0.2s;
+}
+
+.header.sticky .navbar a {
+  color: var(--text-color);
+}
+
+.header.sticky .navbar a.active {
+  color: var(--main-color);
+}
+
+.navbar a.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 0.2rem;
+  background: var(--white-color);
+}
+
+.header.sticky .navbar a::before {
+  background: var(--main-color);
+  opacity: 0.7;
+}
+
+.container {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mainimg {
+  margin-top: 20px;
+}
+
+img {
+  width: 80rem;
+  height: 100%;
+  border-radius: 15px;
+}
+img:hover {
+  transform: scale(1.01);
+  transition: 0.5s;
+}
+
+.content {
+  margin-top: 15px;
+}
+
+.content h1 {
+  margin-bottom: 15px;
+  font-size: 4rem;
+}
+
+.sevices {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.sevices h1 {
+  font-size: 4rem;
+  margin-bottom: 15px;
+}
+
+.service {
+  width: 30rem;
+  height: 38rem;
+  margin: 15px;
+  border-radius: 15px;
+  border: 3px solid var(--bg2-color);
+  box-shadow: 0 0.5rem 1rem var(--shadow-color);
+}
+.service:hover {
+  transform: scale(1.01);
+  transition: 0.5s;
+}
+
+.content-service {
+  width: 29.5rem;
+  height: 14.8rem;
+  background-color: var(--bg2-color);
+  padding-bottom: 60px;
+  border-radius: 15px;
+  padding-top: 15px;
+}
+
+.service img {
+  width: 100%;
+  height: 60%;
+  border-radius: 15px 15px 0 0;
+  object-fit: contain;
+}
+.service h3 {
+  margin: 0 8px;
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+.service p {
+  margin: 0 10px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+/* certification*/
+
+.IFP-certification {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.IFP-certification h1 {
+  font-size: 4rem;
+  margin-bottom: 15px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.5);
+  max-width: 400px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 25px;
+  position: relative;
+  margin-right: 15px;
+}
+.card h2 {
+  margin: 0;
+  padding: 0 1rem;
+}
+.card .title {
+  padding: 1rem;
+  text-align: right;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 12px;
+}
+.card .desc {
+  padding: 0.5rem 1rem;
+  font-size: 12px;
+}
+.card .actions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+.card svg {
+  width: 65px;
+  height: 65px;
+  margin: 0 auto;
+}
+
+.img-avatar {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  border-radius: 50%;
+  border: 6px solid white;
+  background-image: linear-gradient(-60deg, #1652a0 0%, #8d3ff4 100%);
+  top: 15px;
+  left: 85px;
+}
+
+.card-text {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.title-total {
+  padding: 2.5em 1.5em 1.5em 1.5em;
+}
+
+path {
+  fill: white;
+}
+
+.img-portada {
+  width: 100%;
+}
+
+.portada {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-image: url("https://uploads-ssl.webflow.com/61940465006a125a22cc90c1/62a9c00bcc38041a3748849f_Cyberseal-2022.png");
+  background-position: bottom center;
+  background-size: cover;
+}
+
+button {
+  border: none;
+  background: none;
+  font-size: 24px;
+  color: #4a60c3;
+  cursor: pointer;
+  transition: 0.5s;
+  &:hover {
+    color: #874caf;
+    transform: rotate(22deg);
+  }
+}
