@@ -317,18 +317,52 @@ path {
   height: 100%;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  background-image: url("https://uploads-ssl.webflow.com/61940465006a125a22cc90c1/62a9c00bcc38041a3748849f_Cyberseal-2022.png");
-  background-position: bottom center;
-  background-size: cover;
+  background-image: url("/img/cyberseal.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .portada-igel-z {
   width: 100%;
   height: 100%;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  background-image: img("/images/igel-z.png");
-  background-position: bottom center;
-  background-size: cover;
+  background-image: url("/img/IgelZert.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.portada-sophos-z {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-image: url("/img/ESH-Sophos-Gold-800x400.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.portada-hp-z {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-image: url("/img/HP-Business-Partner-300x300.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.portada-mic-z {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-image: url("/img/microsoft-silver-partner.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 /* footer */
