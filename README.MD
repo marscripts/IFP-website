@@ -14,7 +14,7 @@ IFP menu Header erstellen
 
 
 # einige images:
-https://github.com/marscripts/IFP-website/blob/main/img/readmeimg/homw.png
+img/readmeimg/homw.png
 
 https://github.com/marscripts/IFP-website/blob/main/img/readmeimg/services.png
 
